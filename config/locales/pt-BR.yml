@@ -16,7 +16,7 @@ pt-BR:
         user:
           <<: *default
           name: 'Nome'
-          email: 'E-mail'
+          email: 'Email'
           password: 'Senha'
           password_confirmation: 'Senha (confirmação)'
           
