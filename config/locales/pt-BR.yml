@@ -5,8 +5,8 @@ pt-BR:
 
      attributes:
         default: &default
-          created_at: 'Criado em'
-          updated_at: 'Atualizado em'
+          created_at: 'Foi criado em'
+          updated_at: 'Foi atualizado em'
 
         post:
           <<: *default
@@ -16,7 +16,7 @@ pt-BR:
         user:
           <<: *default
           name: 'Nome'
-          email: 'E--mail'
+          email: 'E-mail'
           password: 'Senha'
           password_confirmation: 'Senha (confirmação)'
           
