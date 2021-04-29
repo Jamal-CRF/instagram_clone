@@ -1,21 +1,23 @@
 <main class="posts-page container">
   <section class="posts">
     <% if @posts.any? %>
-      <%= rendder @posts %>
+      <%= render @posts %>
     <% else %>
-      <p>Poste algo agora :)<p>
+      Nenhum post ainda.
     <% end %>
   </section>
 
   <aside>
-    sidebar
+    <%= render current_user %>
+
     <section class="suggestions">
       <h4>Sugestões Para Você</h4>
+
+      <%= render @suggested_users %>
     </section>
   </aside>
 
   <footer>
-    ©️ <%= Date.current.year %> INSTAGRAM CLONE
+    © <%= Date.current.year %> INSTAGRAM CLONE
   </footer>
-
-</main>   
+</main>
